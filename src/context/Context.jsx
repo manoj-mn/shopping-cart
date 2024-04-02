@@ -10,7 +10,7 @@ export default function Context({ children }) {
     id: faker.string.uuid(),
     name: faker.commerce.productName(),
     price: faker.commerce.price(),
-    image: faker.image.urlLoremFlickr(),
+    image: faker.image.url(),
     inStock: faker.helpers.arrayElement([0, 1, 3, 5, 7]),
     fastDelivery: faker.datatype.boolean(),
     rating: faker.helpers.arrayElement([1, 2, 3, 4, 5]),
