@@ -1,13 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.scss'
 import Header from './components/Header'
-// import Products from './components/Products'
 import Home from './components/Home'
 import Cart from './components/Cart'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/shopping-cart'>
       <Header />
       <div className='d-flex'>
         <Routes>
